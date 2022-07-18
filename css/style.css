@@ -13,12 +13,11 @@
 }
 body{
     background: rgb(21, 6, 78);
-    min-height: 100vh;
     display: flex;
     border: 50px;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 600vh;
 }
 .logo img{
     position: absolute;
@@ -33,6 +32,7 @@ body{
     padding: 15px 15px;
     width: 100px;
     font-size: 25px;
+    margin-bottom: 500vh;
     justify-content: center;
     color: #ffff;
     font-family: 'Public Sans';
@@ -43,10 +43,12 @@ body{
     align-items: center;
     flex-wrap: wrap;
     margin: 5px;
+    margin-bottom: 500vh;
 }
 .container a{
     position: relative;
     display: inline-block;
+    color: #ffff;
     padding: 15px 30px;
     border: 10px;
     border-radius: 1px;
@@ -88,6 +90,7 @@ body{
     z-index: 10000;
     right: -250px;
     transition: 1s;
+    margin-bottom: 500vh;
 }
 .bar{
     position:fixed;
@@ -131,6 +134,7 @@ body{
 }
 .exit{
     opacity: 0%;
+    margin-bottom: 500vh;
     transition: 0.1s;
     z-index: 100000;
 }
