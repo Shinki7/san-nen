@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Public+Sans:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@1,900&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue';
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+body{
+    background: rgb(21, 6, 78);
+    min-height: 100vh;
+    display: flex;
+    border: 50px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.logo img{
+    position: absolute;
+    width: 100px;
+    top: 0;
+    justify-content: left;
+    left: 0;
+}
+.text{
+    position: absolute;
+    display: inline-block;
+    padding: 15px 15px;
+    width: 100px;
+    font-size: 25px;
+    justify-content: center;
+    color: #ffff;
+    font-family: 'Public Sans';
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+.container a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 10px;
+    border-radius: 1px;
+    margin: 80px;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: black;
+    transition: 1s;
+}
+.container a:hover{
+    color: black;
+}
+.container a span{
+    position: relative;
+    z-index: 100;
+}
+.container a::before{
+    content: '';
+    background-color: white;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    border-radius: 1px;
+    transform: translateY(-50%);
+    width: 0px;
+    height: 62px;
+    transition: 0.5s;
+}
+.container a:hover::before{
+    width: 136px;
+    height: 100%;
+}
+.hamburger{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background: black;
+    z-index: 10000;
+    right: -250px;
+    transition: 1s;
+}
+.bar{
+    position:fixed;
+    right: 0;
+    margin: 2%;
+    justify-content: right;
+    top: 0;
+    cursor: pointer;
+    z-index: 1000;
+}
+.hamburger a{
+    display: block;
+    font-family:'Public Sans';
+    font-size: 25px;
+    justify-content: center;
+    color: white;
+    line-height: 65px;
+    padding:7px 85px;
+    transition: 1s;
+}
+.hamburger a:hover{
+    color: black;
+    z-index: 100;
+}
+.hamburger a::before{
+    content: '';
+    position: absolute;
+    background-color: #ffff;
+    width: 0px;
+    transition: 0.5s;
+}
+.hamburger a:hover::before{
+    width: 250px;
+    height: 10%;
+    right: 0;
+    z-index: -1;
+}
+.hamburger.active{
+    right: 0;
+    transition: 1s;
+}
+.exit{
+    opacity: 0%;
+    transition: 0.1s;
+    z-index: 100000;
+}
+.exit img{
+    position: fixed;
+    height: 30px;
+    margin-bottom: 100px;
+    right: 20px;
+    height: 20px;
+    z-index: 100000;
+}
+.exit.pop{
+    opacity: 100%;
+    z-index: 100000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.border{
+    position: absolute;
+    display: inline-flex;
+    width: 2%;
+    height:15%;
+    justify-content: center;
+    opacity: 0%;
+}
+.border img{
+    padding: 3px 30px;
+    margin: 12px;
+}
