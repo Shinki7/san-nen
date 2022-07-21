@@ -10,6 +10,7 @@
     list-style: none;
     text-decoration: none;
     overflow-x: hidden;
+    overflow-y: auto;
 }
 body{
     background: rgb(21, 6, 78);
@@ -57,7 +58,7 @@ body{
     text-decoration: none;
     font-weight: 500;
     background-color: black;
-    transition: 1s;
+    transition: 0.8s;
 }
 .container a:hover{
     color: black;
@@ -68,7 +69,7 @@ body{
 }
 .container a::before{
     content: '';
-    background-color: white;
+    background-color: #ffff;
     position: absolute;
     left: 0px;
     top: 50%;
@@ -76,9 +77,26 @@ body{
     transform: translateY(-50%);
     width: 0px;
     height: 62px;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 .container a:hover::before{
+    width: 136px;
+    height: 100%;
+}
+.container a::after{
+    content: '';
+    background-color: aquamarine;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    border-radius: 1px;
+    transform: translateY(-50%);
+    width: 0px;
+    height: 62px;
+    transition: 1s;
+    transition-delay: 0.3s;
+}
+.container a:hover::after{
     width: 136px;
     height: 100%;
 }
@@ -118,11 +136,25 @@ body{
 .hamburger a::before{
     content: '';
     position: absolute;
-    background-color: #ffff;
+    background-color: aqua;
     width: 0px;
-    transition: 0.5s;
+    transition: 0.6s;
 }
 .hamburger a:hover::before{
+    width: 250px;
+    height: 10%;
+    right: 0;
+    z-index: -1;
+}
+.hamburger a::after{
+    content: '';
+    position: absolute;
+    background-color: #ffff;
+    width: 0px;
+    transition: 0.8s;
+    transition-delay: 0.2s;
+}
+.hamburger a:hover::after{
     width: 250px;
     height: 10%;
     right: 0;
