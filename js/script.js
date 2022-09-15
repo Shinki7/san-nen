@@ -17,3 +17,7 @@
         exit.classList.remove("pop");
     })
 }
+{
+    var meteor = document.getElementById('met');
+    let stars = document.getElementById('stars');
+}
